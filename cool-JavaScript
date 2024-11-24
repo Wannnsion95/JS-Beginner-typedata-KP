@@ -1,0 +1,16 @@
+let angkaPertama, angkaKedua, hasil;
+
+document.getElementById("button_jumlah").onclick = function () {
+  angkaPertama = document.getElementById("angkaPertama").value;
+  console.log(
+    `angkaPertama = ${angkaPertama} bertipe = ${typeof angkaPertama}`
+  );
+
+  angkaKedua = document.getElementById("angkaKedua").valueAsNumber;
+  console.log(`angkaKedua = ${angkaKedua} bertipe = ${typeof angkaKedua}`);
+
+  hasil = parseFloat(angkaPertama) + angkaKedua;
+  console.log(` hasil = ${hasil} bertipe = ${typeof hasil})`);
+
+  document.getElementById("hasil").textContent = hasil;
+};
